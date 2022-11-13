@@ -1,4 +1,22 @@
 body {
+	margin: 0 auto;
 	background-color: #101010;
 	color: white;
+	max-width: 720px;
+}
+
+.header {
+	display: block;
+	
+}
+
+.titlelogo {
+	display: block;
+	text-align: center;
+	font-size: 4em;
+}
+
+.nav {
+	display: block;
+	text-align: center;
 }
