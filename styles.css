@@ -1,22 +1,97 @@
-body {
-	margin: 0 auto;
-	background-color: #101010;
-	color: white;
-	max-width: 720px;
+@font-face {
+	font-family: 'Anek-bold';
+	src: url(fonts/AnekDevanagari-Bold.ttf)
 }
 
-.header {
-	display: block;
-	
+@font-face {
+	font-family: 'Anek';
+	src: url(fonts/AnekDevanagari-Regular.ttf)
+}
+
+@font-face {
+	font-family: 'Anek-exbold';
+	src: url(fonts/AnekDevanagari_Expanded-ExtraBold.ttf)
+}
+
+/*
+Anek+Devanagari:wdth,wght@114.4,470;125,800
+wght = weight
+wdth = width
+*/
+
+
+body {
+	font-family: 'Anek', sans-serif;
+	margin: 0 auto;
+	background-color: black;
+	color: white;
+	max-width: 720 px;
+}
+
+Header {
+	margin: 150px auto;
+	text-align: center;
 }
 
 .titlelogo {
-	display: block;
-	text-align: center;
-	font-size: 4em;
+	display: inline;
+	font-family: 'Anek-exbold', sans-serif;
+	margin: 20px auto;
+	font-size: 8vw;
 }
 
-.nav {
-	display: block;
+.outline {
+	color: black;
+	text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+}
+
+nav {
+	margin: 60px auto;
 	text-align: center;
+}
+
+a {
+  position: relative;
+  color: white;
+  text-decoration: none;
+}
+
+
+
+nav ul {
+	list-style: none;
+  /*list-style-type: none;*/
+/*  margin: 0;
+  padding: 0;*/
+}
+
+
+nav ul li {
+	display: inline;
+}
+
+nav ul li + li:before{
+	color: gray;
+    content: " / ";
+    padding: 0 30px;
+}
+
+
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    /*border-radius: 4px;*/
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .2s ease-in-out;
+  }
+
+nav a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
