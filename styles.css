@@ -97,16 +97,16 @@ nav a:hover::before {
 }
 
 
-body {
+nav {
   font-size: 20px;
 }
 @media screen and (min-width: 320px) {
-  body {
+  nav {
     font-size: calc(20px + 6 * ((100vw - 320px) / 680));
   }
 }
 @media screen and (min-width: 1000px) {
-  body {
+  nav {
     font-size: 28px;
   }
 }
