@@ -95,3 +95,32 @@ nav a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
+
+
+body {
+  font-size: 16px;
+}
+@media screen and (min-width: 320px) {
+  body {
+    font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+.titlelogo {
+  font-size: 64;
+}
+@media screen and (min-width: 320px) {
+  .titlelogo {
+    font-size: calc(64 + 6 * ((100vw - 320px) / 680));
+  }
+}
+@media screen and (min-width: 1000px) {
+  .titlelogo {
+    font-size: 80px;
+  }
+}
