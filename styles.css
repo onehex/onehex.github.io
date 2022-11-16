@@ -28,7 +28,7 @@ body {
 	margin: 0 auto;
 	background-color: black;
 	color: white;
-	max-width: 1000 px;
+	/*max-width: 1000 px;*/
 	
 }
 
@@ -102,7 +102,7 @@ nav a:hover::before {
 
 
 nav {
-  font-size: 20px;
+  font-size: 30px;
 }
 @media screen and (min-width: 320px) {
   nav {
