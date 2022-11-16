@@ -17,6 +17,9 @@
 Anek+Devanagari:wdth,wght@114.4,470;125,800
 wght = weight
 wdth = width
+
+Triangle Symbols Copy and Paste ◄ ▲ ▼ ►
+
 */
 
 
@@ -74,7 +77,7 @@ nav ul li {
 nav ul li + li:before{
 	color: gray;
     content: " / ";
-    padding: 0 30px;
+    padding: 0 20px;
 }
 
 
